@@ -1,0 +1,156 @@
+# task 1  ask user for a base  number and  exponent
+Base = int(input("Enter the base number: "))
+exponent = int(input("Enter the exponent: "))
+print(Base , "raised to the power" , exponent , "is: ",Base**exponent)
+
+
+
+# task 2 paste this line and replace  the name position and the date with the user input
+str = '''Dear [Name],
+      Congratulations! You have been selected for the position of [Position] on [Date].'''
+
+name = input("Enter the name: ")
+position = input("Enter  the position: ")
+date = input("Enter the date: ")
+
+str = str.replace("[Name]", name)
+str = str.replace("[Position]", position)
+str = str.replace("[Date]", date)
+print(str)
+
+
+# Task 3   we need to take a input from a user  and then count the double space and triple space and repalce them   with  single space  .  Then  Print the clean code
+
+
+Message = input("Enter  the sentence with double and triple whitespace: ")
+Doublespace = Message.count("  ")
+Triplespace = Message.count("   ")
+Message = Message.replace("   "," ")
+Message = Message.replace("  "," ")
+print(Doublespace)
+print(Triplespace)
+print(Message)
+
+
+
+#task 1 :   From this sets of table . find intersection , union and symentric difference
+a = {1, 2, 3, 4}
+b = {3, 4, 5, 6}
+print(a.union(b))
+print(a.intersection(b))
+print(a.symmetric_difference(b))
+
+#t Task 2 Create a set of fruits  then add one  more fruirs  and  then remove one fruits
+Fruits = {"Banana" ," Apple", "Mango"}
+Fruits.add("Lichi")
+print(Fruits)
+Fruits.discard("Mango")
+print(Fruits)
+
+
+# Task 3 : From this sets find these sets have disjoint  value  or not
+x = {10, 20}
+y = {30, 40}
+print(x.isdisjoint(y))
+
+
+# Task 4 : Create a dictinory  on  which print all the keys   and change the  value of age and add city on it.
+student = {
+               "Name": "Azad",
+                "Age": 21,
+                "Course" : "BCA",
+                        }
+print(student.keys())
+student.update({"Age":22 ,"City": "Hisar"})
+print(student)
+student.pop("Course")
+print(student)
+
+
+# task 1:  Find the  greatest number  entered by the user
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+num3 = int(input("Enter the third number: "))
+num4 = int(input("Enter the fouth number: "))
+if(num1>num2 and num1> num3 and num1> num4):
+    print("The greatest number is num1: ", num1)
+elif(num2>num1 and num2> num3 and num2> num4):
+    print("The greatest number is num: ", num2)    
+elif(num3>num1 and num3> num2 and num3> num4):
+    print("The greatest number is num: ", num2)
+else:
+    print("The greatest number is num4: ", num4)        
+
+
+
+    #    loops in python
+    #task: Print  the number between 1 to 10 using for loop
+for i in range(11):
+      print(i)
+      
+
+#task: Write program to print 1 to n number using whilw loop
+n = int(input("enter the number: "))
+i = 1
+while (i<= n):
+    print(i)
+    i+=1
+
+# Task: Print all the even number bbetween 1 to 50
+for i in range(51):
+    if(i%2 ==0):
+        print(i)
+
+
+# Task: Print the table of n 
+n = int(input("enter the number: "))
+for i in range(1,11):
+ print(n*i)
+
+
+# Task: print the sum of first n natural number
+n = int(input("enter the number: "))
+
+i = 1
+sum = 0
+for i in range(n+1):
+    sum +=i
+    print(sum ,end =" ")
+
+#task: print the factorial of n number
+n = int(input("enter the number: "))
+fact = 1
+i = 1
+while (i<=n):
+    fact *= i
+    i +=1
+    print(fact)
+
+
+#task: Wrtie a program to print the reverse number
+n = int(input("Enter the number: "))
+rev = 0
+while n>0:
+ rev = (rev*10)+ n%10
+ n = n//10
+ print(rev) 
+
+
+
+
+ # task: print the minimum number from the given list using loop 
+l = [1,2,3,4,5,0,7,8,9,19]
+min_num = l[0]
+for num in l:
+    if num<min_num:
+        min_num = num
+print("The minimum number is :" ,min_num)
+
+#task: print the count of even number present in the list
+l = [2,3,4,5,5,7,8,9,9]
+even_count = 0
+for even in l:
+    if even % 2 == 0:
+        even_count += 1
+print(even_count)
+    
